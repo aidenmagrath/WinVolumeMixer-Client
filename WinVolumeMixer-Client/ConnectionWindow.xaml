@@ -1,0 +1,19 @@
+﻿<Window x:Class="WinVolumeMixer.Client.ConnectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinVolumeMixer.Client"
+        mc:Ignorable="d"
+        Title="Connect" Height="140" Width="230" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="lblHost" Content="Host/IP Address: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,0.121"/>
+        <TextBox x:Name="txtHost" HorizontalAlignment="Left" Height="23" Margin="111,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" UndoLimit="98" Text="localhost"/>
+        <Label x:Name="lblPort" Content="Port Number: " HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.344,0.787"/>
+        <TextBox x:Name="txtPort" HorizontalAlignment="Left" Height="22" Margin="111,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Text="9000"/>
+        <Button x:Name="btnConnect" Content="Connect" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="90" Click="btnConnect_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="111,72,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="-0.12,0.5" Click="btnCancel_Click"/>
+
+
+    </Grid>
+</Window>

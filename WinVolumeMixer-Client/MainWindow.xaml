@@ -1,0 +1,27 @@
+﻿<Window x:Class="WinVolumeMixer.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinVolumeMixer.Client"
+        mc:Ignorable="d"
+        Title="WinVolumeMixer" MinHeight="400" MaxHeight="400" Height="400" Width="616" Loaded="Window_Loaded" Activated="Window_Activated">
+    <Grid>
+        <Menu IsMainMenu="True">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="menuConnect" Header="_Connect" Click="menuConnect_Click"/>
+                <MenuItem x:Name="menuDisconnect" Header="_Disconnect" IsEnabled="False" Click="menuDisconnect_Click"/>
+                <MenuItem x:Name="menuOptions" Header="_Options" Click="menuOptions_Click"/>
+                <MenuItem x:Name="menuExit" Header="_Exit" Click="menuExit_Click"/>
+            </MenuItem>
+            <MenuItem Header="_View">
+                <MenuItem x:Name="menuRefresh" Header="_Refresh" IsEnabled="False" Click="menuRefresh_Click"/>
+            </MenuItem>
+        </Menu>
+        <ScrollViewer x:Name="scrollViewer" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden" Margin="0,20,0,0">
+            <StackPanel x:Name="panel" Orientation="Horizontal">
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
