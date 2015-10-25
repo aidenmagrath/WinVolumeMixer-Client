@@ -6,6 +6,10 @@ The client connects to the [WinVolumeMixer-Server](https://github.com/aidenmagra
 
 ![WinVolumeMixer Client](http://aidenmagrath.com/Images/WinVolumeMixer%20Client%20v0.1.0.png)
 
+#Downloads
+Client: [download v0.1.0 client](https://github.com/aidenmagrath/WinVolumeMixer-Client/releases/download/v0.1.0/WinVolumeMixer-Client-Setup.exe)
+Server: [download v0.1.0 server](https://github.com/aidenmagrath/WinVolumeMixer-Server/releases/download/0.1.0/WinVolumeMixer-Server-Setup.exe)
+
 # To Do:
 - [x] Add settings window to server.
 - [ ] Add option to automatically run program at startup.
