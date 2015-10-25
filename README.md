@@ -8,6 +8,6 @@ The client connects to the [WinVolumeMixer-Server](https://github.com/aidenmagra
 
 # To Do:
 - [x] Add settings window to server.
-- [ ] Add option to auto start program at startup.
-- [ ] Add option to auto start server.
+- [ ] Add option to automatically run program at startup.
+- [ ] Add option to automatically start server.
 - [ ] Create Android Client.
