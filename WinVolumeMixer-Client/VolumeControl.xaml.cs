@@ -28,6 +28,7 @@ namespace WinVolumeMixer.Client
             txtApplication.Text = application.Name;
             txtApplication.ToolTip = application.Name;
             btnMute.IsChecked = application.Muted;
+            
 
             slider.Value = application.Volume * 100;
         }
@@ -54,6 +55,15 @@ namespace WinVolumeMixer.Client
         private void btnMute_Click(object sender, RoutedEventArgs e)
         {
             application.Muted = btnMute.IsChecked.GetValueOrDefault();
+            if (application.Muted)
+            {
+                icon.Source = new BitmapImage(new Uri("pack://application:,,,/Images/volume_mute.ico"));
+            }
+            else
+            {
+                icon.Source = new BitmapImage(new Uri("pack://application:,,,/Images/volume_unmute.ico"));
+            }
+
             ApplicationManager.GetManager().UpdateApplication(application);
         }
 

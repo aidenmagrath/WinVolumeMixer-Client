@@ -12,7 +12,9 @@
             <TextBlock x:Name="txtApplication" TextTrimming="CharacterEllipsis">HelloWorld</TextBlock>
         </Label>
 
-        <ToggleButton x:Name="btnMute" Content="M" Margin="62,294,62,0" VerticalAlignment="Center" Width="25" Height="26" RenderTransformOrigin="0.56,2.36" Click="btnMute_Click"/>
+        <ToggleButton x:Name="btnMute"  Margin="62,294,62,0" VerticalAlignment="Center" Width="25" Height="26" RenderTransformOrigin="0.56,2.36" Click="btnMute_Click" Background="#FFDDDDDD">
+            <Image x:Name="icon" Source="Images/volume_unmute.ico"/>
+        </ToggleButton>
 
     </Grid>
 </UserControl>
